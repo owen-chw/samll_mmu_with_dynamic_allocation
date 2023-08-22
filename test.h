@@ -5,6 +5,9 @@
 typedef unsigned u32;
 typedef unsigned long long u64;
 
-static u64 inline check64(u64 val) {
+static u64* check64(u64* val) 
+//@ requires true;
+//@ ensures true;
+{
 	return val;
 };
